@@ -1,0 +1,147 @@
+:root {
+    --primary-color: black;
+    --secondary-color: azure;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    color: var(--secondary-color);
+    color: azure;
+    text-shadow: none;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body {
+    background-color: black;
+}
+
+.main{
+    margin: auto;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+    overflow: hidden;
+    position: relative;
+    margin: 120px auto 0 auto;
+}
+
+.status-main{
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid rgb(230, 101, 123);
+    border-radius: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    gap: 50px;
+}
+
+
+#progressBarContainer {
+    width: 100%;
+    margin-top: 20px;
+    height: 10px;
+    background-color: rgba(247, 234, 236, 0.3); 
+    border-radius: 5px;
+    overflow: hidden; 
+    position: relative;
+}
+
+#progressBar {
+    width: 0%; 
+    height: 100%;
+    background-color: rgb(233, 44, 75); 
+    border-radius: 5px 0 0 5px; 
+    transition: all 0.3s ease;
+}
+
+.status-numbers{
+    width: 100px;
+    height: 100px;
+    background-color:rgb(233, 44, 75);
+    border-color: none;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-left: 55px;
+    border: none;
+    outline: none;
+}
+
+form{
+    margin-top: 60px; 
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    border-radius: 2px;
+}
+
+input{
+    flex: 1;
+    padding: 16px;
+    background: var(--secondary-color);
+    border: 1px solid var(--pink);
+    border-radius: 10px;
+    color: black;
+    outline: none;
+}
+
+button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(233, 44, 75);
+    border: none; 
+    outline: none;
+}
+
+#task-list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+    width: 100%;
+    list-style: none;
+}
+
+.taskItem{
+    display: flex;
+    background-color: var(--secondary-color);
+    padding: 10px;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task p{
+    color: black;
+}
+
+.task{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.task input{
+    width: 20px;
+    height: 20px;
+}
+
+.completed p{
+    text-decoration: line-through;
+    color: rgb(233, 44, 75);
+}
+.taskItem img{
+    width: 24px;
+    height: 24px;
+}
