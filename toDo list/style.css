@@ -19,7 +19,9 @@ body {
 
 .main{
     margin: auto;
-    max-width: 600px;
+    /* max-width: 600px; */
+    max-width: 80%;  
+    /* 600px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -31,7 +33,7 @@ body {
 }
 
 .status-main{
-    padding: 30px;
+    padding: 5%;
     display: flex;
     justify-content: space-between;
     border: 2px solid rgb(230, 101, 123);
@@ -69,7 +71,8 @@ body {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    margin-left: 55px;
+    margin-left: 10%;
+    /* margin-left: 55px; */
     border: none;
     outline: none;
 }
